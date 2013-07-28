@@ -1,0 +1,120 @@
+body {
+	background: url("../img/background.jpg") no-repeat fixed center top #000;
+    margin: 0 auto;
+    text-align: center;
+	font-family: Arial, Helvetica, Tahoma, verdana;
+	
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../font/bebasneue-webfont.eot');
+    src: url('../font/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebasneue-webfont.woff') format('woff'),
+         url('../font/bebasneue-webfont.ttf') format('truetype'),
+         url('../font/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1
+{
+text-align: center;
+font-size: 20px;
+font-family: Arial;
+}
+.space
+{
+height: 100px;
+}
+#logo
+{
+ text-align: center;
+ font-size: 20px;
+ color: black;
+ height: 100px;
+}
+.logobar
+{
+top: 0px;
+width: 100%;
+height: 25px;
+background: none repeat scroll 0 0 rgba(255, 95, 95, 1);
+margin: 0px;
+border-bottom: 2px solid black;
+}
+/*----------------------------
+	Thumbnails
+-----------------------------*/
+
+.thumbs{
+	width:1050px;
+	margin:40px auto 35px;
+	text-align:center;
+}
+
+.thumbs a{
+	width:180px;
+	height:120px;
+	display:inline-block;
+	border:7px solid #ff5f5f;
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	border-radius:4px;
+	margin: 6px 6px 40px;
+	position:relative;
+	text-decoration:none;
+	
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+/*.thumbs a:after{
+	background-color: #303030;
+    border-radius: 7px;
+    bottom: -136px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    content: attr(title);
+    display: inline-block;
+    font-size: 10px;
+    max-width: 90px;
+    overflow: hidden;
+    padding: 2px 10px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+*/
+#credit{
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+	font-size: 11px;
+	margin: 0 auto 70px;
+	opacity: 0.5;
+	padding: 12px 16px;
+	text-align: center;
+	width: 400px;
+}
+
+
+/*----------------------------
+	Media Queries
+-----------------------------*/
+
+
+@media screen and (max-width: 960px) {
+	.thumbs, #credit{
+		width:auto;
+	}
+	
+	footer{
+		display:none;
+	}
+	
+	#bsaHolder{
+		display:none;
+	}
+}

@@ -1,0 +1,292 @@
+body {
+	background: url("../img/background.jpg") no-repeat fixed center top #000;
+    margin: 0 auto;
+    text-align: center;
+	font-family: Arial, Helvetica, Tahoma, verdana;
+	
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../font/bebasneue-webfont.eot');
+    src: url('../font/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebasneue-webfont.woff') format('woff'),
+         url('../font/bebasneue-webfont.ttf') format('truetype'),
+         url('../font/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#logo
+{
+ text-align: center;
+ font-size: 20px;
+ color: black;
+}
+.logobar
+{
+top: 0px;
+width: 100%;
+height: 25px;
+background: none repeat scroll 0 0 rgba(255, 95, 95, 1);
+margin: 0px;
+border-bottom: 2px solid black;
+}
+#paleta
+{
+width: 1000px;
+height: 120px;
+}
+#welcome
+{
+ text-align: center;
+ font-size: 20px;
+ margin-top: 80px;
+ color: black;
+}
+.scrns
+{
+text-align: center;
+height: 40px;
+margin-top: 30px;
+
+}
+
+.wrapper
+{
+width: 1090px; 
+text-align: center; 
+margin: 0px auto;
+margin-top: 50px;
+padding: 0px 0px 80px 0;	
+}
+.wrapper2
+{
+width: 540px; 
+text-align: center; 
+margin: 0px auto;
+margin-top: 70px;
+padding: 0px 0px 80px 0;
+}
+
+.contentbox
+{
+width: 100%;  
+
+margin-top: 206px;
+color: #e5e5e5;
+height: 230px;
+background: none repeat scroll 0 0 rgba(255, 101, 101, 1);
+padding: 20px 0 40px 0;
+border-top: 3px solid black;
+}
+#title
+{
+font-size: 24px;
+text-align: left;
+color: #fff0d4;
+
+}
+#content
+{
+width: 900px; 
+text-align: justify; 	
+margin: 0px auto;
+color: black;
+height: 220px;
+}
+a h3
+{
+font-size: 24px;
+}
+
+.social
+{
+width: 900px;
+position:absolute;
+margin-top: 110px;
+height:80px;
+float: center;
+text-align: center; 
+
+background: none repeat scroll 0 0 rgba(255,101,101,1); /*rgba(255, 95, 95, 1);*/
+}
+.social_buttom_1
+{
+width: 160px;
+height: 120px;
+margin: 0px;
+float: left;
+outline: none;
+overflow: hidden;
+position: relative;
+text-align: center;
+cursor: default;
+}
+.kurwa
+{
+text-align: center;
+position: relative;
+float: center;
+}
+#stopka
+{
+bottom: 0;
+font-size: 7px;
+color: black;
+text-align: right;
+width:100%;
+height: 10px;
+}
+
+/*  CSS PRZYCISKI  */
+.view {
+	width: 250px;
+    height: 120px;
+    margin: 10px;
+    float: left;
+	outline: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /**box-shadow: 1px 1px 2px #000;*/
+    cursor: default;  
+	margin-top: 10px;
+}
+
+.view .mask, .view .content {
+    outline: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    border-radius: 8px;
+	width: 250px;
+    height: 120px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    font-family: bebas_neueregular;  
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 5px 0 0 0;
+}
+.view p {
+    font-family: bebas_neueregular;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    font-family: bebas_neueregular;
+	font-size: 24px;
+	margin-top: 25px;
+	padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 0px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+/* ANIMACJA! */
+
+.view-first img {
+    outline: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    border-radius: 8px;
+	transition: all 0.2s linear;
+}
+.view-first .mask {
+	opacity: 0;
+    background-color: rgba(255,157,157, 1);
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+	transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p {
+	transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.view-first a.info{
+	opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first:hover img {
+	transform: scale(1.1);
+}
+.view-first:hover .mask {
+    opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+/*PLACEFOLER Css PLACEFOLER Css PLACEFOLER Css PLACEFOLER Css PLACEFOLER Css PLACEFOLER Css PLACEFOLER Css */
+.view2 {
+	width: 520px;
+    height: 40px;
+    margin: 10px;
+    float: left;
+	outline: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /**box-shadow: 1px 1px 2px #000;*/
+    cursor: default;
+	
+    
+}
+
+.view2 .mask, .view .content {
+    outline: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    border-radius: 8px;
+	width: 520px;
+    height: 40px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+	border: 1px solid #ececec;
+}
+.view2 img {
+    display: block;
+    position: relative
+}
+
